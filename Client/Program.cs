@@ -6,7 +6,11 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            var now = DateTime.Now;
+            Console.WriteLine($"Hello World! {now.DayOfWeek}");
+            Console.WriteLine($"Hello World! {now}");
+            
         }
     }
 }
