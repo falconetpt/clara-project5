@@ -6,6 +6,8 @@ namespace Domain.Recepies
 {
     public class Recepie
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
         public RecepieStatus Status { get; set; }
         public string Description { get; set; }
         public IList<Ingredient> Ingredients { get; set; }

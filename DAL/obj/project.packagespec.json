@@ -17,7 +17,11 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/user/Desktop/c_sharp/clara_proj5/Domain/Domain.csproj": {
+            "projectPath": "/Users/user/Desktop/c_sharp/clara_proj5/Domain/Domain.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
