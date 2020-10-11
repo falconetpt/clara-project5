@@ -20,5 +20,10 @@ namespace Domain.Recepies
         {
             get;
         } = DateTime.Now;
+
+        public override string ToString()
+        {
+            return $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(Status)}: {Status}, {nameof(Description)}: {Description}, {nameof(Ingredients)}: {Ingredients}, {nameof(Categories)}: {Categories}, {nameof(Difficulty)}: {Difficulty}, {nameof(Duration)}: {Duration}, {nameof(CreatedBy)}: {CreatedBy}, {nameof(CreatedAt)}: {CreatedAt}";
+        }
     }
 }

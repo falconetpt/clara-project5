@@ -16,6 +16,7 @@ namespace DAL.ingredients
                 Id = 1,
                 FavoriteRecepies = new HashSet<Recepie>(),
                 Name = "admin",
+                Pass = "admin",
                 Role = UserRole.Admin,
                 UserStatus = UserStatus.Accepted
             });
@@ -25,6 +26,7 @@ namespace DAL.ingredients
         // Create
         public User Create(User user)
         {
+            user.Id = database.Count + 1;
             database.Add(user.Name, user);
             return user;
         }

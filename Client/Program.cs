@@ -9,31 +9,28 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            var ingredientController = new IngredientController();
             var userController = new UserController();
             var recepiesController = new RecepiesController();
 
             var menuDisplay = "---- Menu ----\n" +
-                                    "1 - Ingredients\n" +
+                                    "1 - Recipies\n" +
                                     "2 - Login\n" +
-                                    "3 - Recipies\n" +
                                     "0 - Exit\n";
 
             Console.WriteLine(menuDisplay);
             string input = Console.ReadLine();
+            
+            var loggedUser = userController.loggedUser;
 
             while (input != "0")
             {
                 switch (input)
                 {
                     case "1":
-                        ingredientController.menu();
+                        recepiesController.menu(loggedUser);
                         break;
                     case "2":
                         userController.menu();
-                        break;
-                    case "3":
-                        recepiesController.menu();
                         break;
                     default:
                         Console.WriteLine(
@@ -45,6 +42,13 @@ namespace Client
                 }   
                 
                 Console.WriteLine(menuDisplay);
+                
+                loggedUser = userController.loggedUser;
+                if (loggedUser != null)
+                {
+                    Console.WriteLine($"Logged in as: {loggedUser.Name}");
+                }
+                
                 input = Console.ReadLine();
             }
             

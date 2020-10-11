@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Client.ingredients;
 using Client.utils;
 using Domain;
+using Domain.Recepies;
 
 namespace Client.Controllers
 {
@@ -20,8 +22,7 @@ namespace Client.Controllers
                               "4 - Sign out\n" +
                               "0 - Exit\n";
 
-            Console.WriteLine(menuDisplay);
-            string input = Console.ReadLine();
+            var input = Utils.AskInput(menuDisplay);
 
             while (input != "0")
             {
@@ -31,10 +32,13 @@ namespace Client.Controllers
                         login();
                         break;
                     case "2":
+                        signUp();
                         break;
                     case "3":
+                        guestAccount();
                         break;
                     case "4":
+                        logout();
                         break;
                     default:
                         Console.WriteLine(
@@ -45,8 +49,12 @@ namespace Client.Controllers
                         break;
                 }
 
-                Console.WriteLine(menuDisplay);
-                input = Console.ReadLine();
+                if (loggedUser != null)
+                {
+                    return;
+                }
+
+                input = Utils.AskInput(menuDisplay);
             }
         }
 
@@ -70,7 +78,36 @@ namespace Client.Controllers
         
         private void logout()
         {
+            Console.WriteLine($"Logging out of {loggedUser.Name} account ... ");
             loggedUser = null;
+        }
+
+        private void guestAccount()
+        {
+            Console.WriteLine("logging in as guest");
+            loggedUser = new User()
+            {
+                Role = UserRole.Guest,
+                UserStatus = UserStatus.Accepted
+            };
+        }
+
+        private void signUp()
+        {
+            var username = Utils.AskInput("Username: ");
+            var password = Utils.AskInput("Password: ");
+
+            var user = new User()
+            {
+                FavoriteRecepies = new HashSet<Recepie>(),
+                Name = username,
+                Pass = password,
+                Role = UserRole.User,
+                UserStatus = UserStatus.Pending
+            };
+            
+            _userService.Create(user);
+            loggedUser = user;
         }
     }
 }
