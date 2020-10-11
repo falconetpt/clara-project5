@@ -7,6 +7,7 @@ namespace Domain
     {
         public int Id { set; get; }
         public string Name { get; set; }
+        public string Pass { get; set; }
         public UserRole Role { get; set; }
         public UserStatus UserStatus { get; set; }
         public ISet<Recepie> FavoriteRecepies { get; set; }

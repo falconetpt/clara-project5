@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DAL.ingredients;
 using Domain.ingredients;
 
@@ -8,6 +9,12 @@ namespace Client.ingredients
     {
         private readonly IngrendientsRepository _repository = new IngrendientsRepository();
 
+        
+        public ISet<Ingredient> GetAll()
+        {
+            return _repository.getAll();
+        }
+        
         public void CreateIngredient(Ingredient ingredient)
         {
             if (ingredient.Quantity < 0)

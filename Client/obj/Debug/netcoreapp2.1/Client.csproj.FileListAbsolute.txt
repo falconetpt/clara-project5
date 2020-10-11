@@ -9,3 +9,8 @@
 /Users/user/Desktop/c_sharp/clara_proj5/Client/obj/Debug/netcoreapp2.1/Client.AssemblyInfo.cs
 /Users/user/Desktop/c_sharp/clara_proj5/Client/obj/Debug/netcoreapp2.1/Client.dll
 /Users/user/Desktop/c_sharp/clara_proj5/Client/obj/Debug/netcoreapp2.1/Client.pdb
+/Users/user/Desktop/c_sharp/clara_proj5/Client/bin/Debug/netcoreapp2.1/DAL.dll
+/Users/user/Desktop/c_sharp/clara_proj5/Client/bin/Debug/netcoreapp2.1/Domain.dll
+/Users/user/Desktop/c_sharp/clara_proj5/Client/bin/Debug/netcoreapp2.1/DAL.pdb
+/Users/user/Desktop/c_sharp/clara_proj5/Client/bin/Debug/netcoreapp2.1/Domain.pdb
+/Users/user/Desktop/c_sharp/clara_proj5/Client/obj/Debug/netcoreapp2.1/Client.csproj.CopyComplete

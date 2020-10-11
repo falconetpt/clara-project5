@@ -1,0 +1,12 @@
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/bin/Debug/netcoreapp2.1/DAL.deps.json
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/bin/Debug/netcoreapp2.1/DAL.dll
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/bin/Debug/netcoreapp2.1/DAL.pdb
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/bin/Debug/netcoreapp2.1/Domain.dll
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/bin/Debug/netcoreapp2.1/Domain.pdb
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.csprojAssemblyReference.cache
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.AssemblyInfoInputs.cache
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.AssemblyInfo.cs
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.csproj.CopyComplete
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.dll
+/Users/user/Desktop/c_sharp/clara_proj5/DAL/obj/Debug/netcoreapp2.1/DAL.pdb

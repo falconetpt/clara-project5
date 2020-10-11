@@ -1,9 +1,10 @@
 namespace Client.Controllers
 {
-    public class RecepiesController
+    public class IngredientController
     {
         public void menu()
         {
+            
         }
     }
 }
